@@ -591,6 +591,56 @@ a:hover, a:active {
     margin-bottom: 30px;
 }
 
+/*--------------------------------------------------------------
+# About Us page - Info Section
+--------------------------------------------------------------*/
+
+.aboutus-info-section {
+    padding: 120px 0 0 0;
+    background: #fff;
+}
+
+.aboutus-info-section figure {
+    padding-right: 30px;
+}
+
+.aboutus-info-section figure img {
+    max-width: 100%;
+}
+
+.aboutus-info-section .entry-title {
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 1;
+    color: #232127;
+}
+
+.aboutus-info-section .entry-content {
+    margin-top: 32px;
+}
+
+.aboutus-info-section .entry-content p {
+    font-size: 18px;
+    line-height: 1.7;
+    color: #777777;
+}
+
+.aboutus-info-section .entry-footer a {
+    margin-top: 32px;
+    margin-right: 18px;
+}
+
+/*--------------------------------------------------------------
+# Services page - Info Section
+--------------------------------------------------------------*/
+
+.services-info-section {
+    padding: 50px 0 70px 0;
+    background: #fff;
+}
+
+
+
 @media screen and (max-width: 575px) {
     .featured-events-wrap .event-content-wrap.half {
         width: calc(50% - 15px);
