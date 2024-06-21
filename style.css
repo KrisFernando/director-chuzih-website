@@ -95,12 +95,12 @@ a:hover, a:active {
 .btn.gradient-bg {
     padding: 18px 46px;
     border: 0;
-    background: -moz-linear-gradient(180deg, rgba(171,0,229,1) 0%, rgba(88,20,121,1) 100%); /* ff3.6+ */
-    background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(88,20,121,1)), color-stop(100%, rgba(171,0,229,1))); /* safari4+,chrome */
-    background: -webkit-linear-gradient(180deg, rgba(171,0,229,1) 0%, rgba(88,20,121,1) 100%); /* safari5.1+,chrome10+ */
-    background: -o-linear-gradient(180deg, rgba(171,0,229,1) 0%, rgba(88,20,121,1) 100%); /* opera 11.10+ */
-    background: -ms-linear-gradient(180deg, rgba(171,0,229,1) 0%, rgba(88,20,121,1) 100%); /* ie10+ */
-    background: linear-gradient(270deg, rgba(171,0,229,1) 0%, rgba(88,20,121,1) 100%); /* w3c */
+    background: -moz-linear-gradient(180deg, rgba(69, 2, 226,1) 0%, rgba(35, 20, 121,1) 100%); /* ff3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(35, 20, 121,1)), color-stop(100%, rgba(69, 2, 226,1))); /* safari4+,chrome */
+    background: -webkit-linear-gradient(180deg, rgba(69, 2, 226,1) 0%, rgba(35, 20, 121,1) 100%); /* safari5.1+,chrome10+ */
+    background: -o-linear-gradient(180deg, rgba(69, 2, 226,1) 0%, rgba(35, 20, 121,1) 100%); /* opera 11.10+ */
+    background: -ms-linear-gradient(180deg, rgba(69, 2, 226,1) 0%, rgba(35, 20, 121,1) 100%); /* ie10+ */
+    background: linear-gradient(270deg, rgb(69, 2, 226,1) 0%, rgb(35, 20, 121,1) 100%); /* w3c */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#581479', endColorstr='#ab00e5',GradientType=1 ); /* ie6-9 */
     color: #fff;
 }
@@ -128,8 +128,7 @@ a:hover, a:active {
     left: 0;
     z-index: 99;
     width: 100%;
-    padding: 10px 0;
-    background-color: hsl(0, 0%, 0%, 0.4);
+    padding: 14px 0;
 }
 
 /*
@@ -168,7 +167,7 @@ a:hover, a:active {
     position: absolute;
     height: 2px;
     width: 100%;
-    background: #fff;
+    background: #ffe61c;
     border-radius: 10px;
     opacity: 1;
     left: 0;
@@ -230,7 +229,7 @@ a:hover, a:active {
 .site-navigation ul {
     position: fixed;
     top: 0;
-    right: 0px;
+    left: -320px;
     z-index: 9999;
     width: 320px;
     max-width: 80%;
@@ -238,18 +237,18 @@ a:hover, a:active {
     overflow-x: scroll;
     padding: 30px;
     margin: 0;
-    background: #9a28d7;
+    background: #4228d7;
     transition: all 0.35s;
 }
 
 .site-navigation.show ul {
-    right: 0;
+    left: 0;
 }
 
 .site-navigation ul li {
     display: block;
-    padding: 10px 40px;
-    font-size: 20px;
+    padding: 10px 16px;
+    font-size: 16px;
     font-weight: bold;
     letter-spacing: 0.02rem;
     text-transform: uppercase;
@@ -257,7 +256,7 @@ a:hover, a:active {
 
 .site-navigation ul li a {
     display: block;
-    color: #fff;
+    color: #ffe61c;
     transition: all 0.35s;
     text-decoration: none;
 }
@@ -292,7 +291,7 @@ a:hover, a:active {
     }
 
     .site-navigation ul li a {
-        color: #fff;
+        color:  #ffe61c;
     }
 }
 
@@ -307,14 +306,14 @@ a:hover, a:active {
 .site-header .buy-tickets .btn,
 .hero-slider .btn {
     padding: 16px 46px;
-    border: 2px solid #fff;
+    border: 2px solid #ffe61c;
+    color: #ffe61c;
 }
 
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
-.swiper-slide {
-    background-position: bottom right !important;
+.hero-slider {
 }
 
 .hero-content {
@@ -325,7 +324,7 @@ a:hover, a:active {
 .hero-content .container,
 .hero-content .row,
 .hero-content .col {
-    height: 100%;
+    height: 75vh;
 }
 
 .hero-slider .entry-title {
@@ -356,9 +355,9 @@ a:hover, a:active {
     width: 42px;
     height: 42px;
     margin-top: -21px;
-    border: 2px solid #fff;
+    border: 2px solid #ffe61c;
     border-radius: 50%;
-    background: #9a28d7;
+    background: #1C35FF;
     transition: all .35s;
 }
 
@@ -384,7 +383,7 @@ a:hover, a:active {
 
 .swiper-button-next path,
 .swiper-button-prev path {
-    fill: #fff;
+    fill: #ffe61c;
 }
 
 .swiper-pagination-bullet {
@@ -395,7 +394,7 @@ a:hover, a:active {
     font-size: 18px;
     font-weight: bold;
     text-align: right;
-    color: #fff;
+    color: #ffe61c;
     background: transparent;
     opacity: 1;
     transition: all .35s;
@@ -414,7 +413,7 @@ a:hover, a:active {
     z-index: 99;
     width: 20px;
     height: 2px;
-    background: #fff;
+    background: #ffe61c;
 }
 
 @media screen and (min-width: 768px){
@@ -424,34 +423,6 @@ a:hover, a:active {
     }
 }
 
-/*
-# Countdown
---------------------------------*/
-.countdown-holder {
-    margin-right: 12px;
-    color: #fff;
-    font-size: 18px;
-    font-weight: bold;
-}
-
-.countdown-holder label {
-    font-size: 13px;
-}
-
-@media screen and (min-width: 576px){
-    .hero-slider .entry-title {
-        font-size: 42px;
-    }
-
-    .countdown-holder {
-        margin-right: 24px;
-        font-size: 42px;
-    }
-
-    .countdown-holder label {
-        font-size: 18px;
-    }
-}
 
 
 @media screen and (min-width: 992px) {
@@ -519,10 +490,14 @@ a:hover, a:active {
     margin-top: 32px;
 }
 
-.homepage-info-section .entry-content p {
+.homepage-info-section .entry-content p, .homepage-info-section .entry-content h3, .homepage-info-section .entry-content ol {
     font-size: 18px;
     line-height: 1.7;
     color: #777777;
+}
+
+.homepage-info-section .entry-content ol span{
+    font-weight: 600;
 }
 
 .homepage-info-section .entry-footer a {
@@ -530,13 +505,63 @@ a:hover, a:active {
     margin-right: 18px;
 }
 
+
+/*--------------------------------------------------------------
+# Homepage - Featured Events
+--------------------------------------------------------------*/
+.homepage-gallery {
+    height: auto;
+    padding: 110px 0 150px;
+    background: url("images/featured-events-bg2.png") no-repeat center;
+    background-size: cover !important;
+    margin-bottom: 20px;
+}
+
+.homepage-gallery .gallery {
+    font-size: 60px;
+    font-weight: bold;
+    line-height: 1;
+    color: #ffe61c;
+    margin-top: -100px;
+}
+
+.description{
+    background-color: white;
+    margin: 0;
+    padding: 10px;
+    border-radius: 5px;
+    min-width: 100%;
+}
+
+.event-content-wrap{
+    width: 270px;
+}
+
+.featured-gallery-wrap .event-content-wrap{
+    position: relative;
+    padding: 36px 18px;
+    border-radius: 5px;;
+}
+
+.featured-gallery-wrap .event-content-wrap figure{
+    /* position: absolute; */
+    margin-top: -10px;
+    padding: 0;
+}
+
+.event-content-wrap img{
+    width: 100%;
+    border-radius: 5px;;
+}
+
+
 /*--------------------------------------------------------------
 # Homepage - Featured Events
 --------------------------------------------------------------*/
 .homepage-featured-events {
     height: auto;
     padding: 110px 0 150px;
-    background: url("images/featured-events-bg.jpg") no-repeat center;
+    background: url("images/featured-events-bg3.jpg") no-repeat center;
     background-size: cover !important;
 }
 
@@ -553,6 +578,7 @@ a:hover, a:active {
     display: block;
     width: 100%;
 }
+
 
 .homepage-featured-events .event-content-wrap .entry-header {
     position: absolute;
@@ -590,56 +616,6 @@ a:hover, a:active {
     width: 100%;
     margin-bottom: 30px;
 }
-
-/*--------------------------------------------------------------
-# About Us page - Info Section
---------------------------------------------------------------*/
-
-.aboutus-info-section {
-    padding: 120px 0 0 0;
-    background: #fff;
-}
-
-.aboutus-info-section figure {
-    padding-right: 30px;
-}
-
-.aboutus-info-section figure img {
-    max-width: 100%;
-}
-
-.aboutus-info-section .entry-title {
-    font-size: 60px;
-    font-weight: bold;
-    line-height: 1;
-    color: #232127;
-}
-
-.aboutus-info-section .entry-content {
-    margin-top: 32px;
-}
-
-.aboutus-info-section .entry-content p {
-    font-size: 18px;
-    line-height: 1.7;
-    color: #777777;
-}
-
-.aboutus-info-section .entry-footer a {
-    margin-top: 32px;
-    margin-right: 18px;
-}
-
-/*--------------------------------------------------------------
-# Services page - Info Section
---------------------------------------------------------------*/
-
-.services-info-section {
-    padding: 50px 0 70px 0;
-    background: #fff;
-}
-
-
 
 @media screen and (max-width: 575px) {
     .featured-events-wrap .event-content-wrap.half {
@@ -825,7 +801,7 @@ a:hover, a:active {
     font-weight: bold;
     line-height: 1;
     color: #232127;
-    background: url("images/next-events-header-bg.png") no-repeat center;
+    background: url("images/next-events-header-bg1.png") no-repeat center;
     text-align: center;
 }
 
@@ -865,14 +841,14 @@ a:hover, a:active {
     left: 32px;
     width: 78px;
     height: 78px;
-    border: 2px solid #fff;
+    border: 2px solid #ffe61c;
     border-radius: 50%;
 
     font-size: 22px;
     font-weight: bold;
-    color: #fff;
+    color: #ffe61c;
 
-    background: #9a28d7;
+    background: #1C35FF;
 }
 
 .homepage-next-events .next-event-wrap .entry-title {
@@ -923,9 +899,8 @@ a:hover, a:active {
 # Homepage - Regional Events
 --------------------------------------------------------------*/
 .homepage-regional-events {
-    /*min-height: 1500px;*/
+    min-height: 1500px;
     padding-top: 280px;
-    padding-bottom: 200px;
     background: url("images/regional-events-bg.jpg") no-repeat;
     background-size: cover;
 }
@@ -1175,7 +1150,7 @@ a:hover, a:active {
 }
 
 .elements-page-header {
-    background-image: url("images/elements-bg.jpg");
+    background-image: url("images/elements-bg1.jpg");
 }
 
 /*--------------------------------------------------------------
@@ -2184,7 +2159,7 @@ ul.tabs-nav .tab-nav.active {
 .footer-navigation li a {
     display: block;
     padding: 8px 12px;
-    color: #fff;
+    color: #ffe61c;
 }
 
 .footer-social li a {
@@ -2208,9 +2183,9 @@ ul.tabs-nav .tab-nav.active {
     width: 42px;
     height: 42px;
     margin-top: -21px;
-    border: 2px solid #fff;
+    border: 2px solid #ffe61c;
     border-radius: 50%;
-    background: #9a28d7;
+    background: #1C35FF;
     transition: all .35s;
     cursor: pointer;
 
@@ -2230,5 +2205,5 @@ ul.tabs-nav .tab-nav.active {
 }
 
 .back-to-top path {
-    fill: #fff;
+    fill: #ffe61c;
 }
